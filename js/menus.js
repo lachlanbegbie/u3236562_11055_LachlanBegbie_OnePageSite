@@ -1,6 +1,6 @@
 // Remove 'hidden' class from the clicked article, hide all others
 
-function unhide(current, point) {
+function unhide(point) {
     let pages = document.getElementsByClassName("sections");
 
     for (i=0; i<pages.length; i++) {
@@ -15,29 +15,19 @@ function unhide(current, point) {
 
 // On each click of a menu item, the page selected will be revealed, and the other pages will be hidden
 function clickedPop() {
-    let page = document.getElementById("populationlink");
     let position = 0;
 
-    unhide(page, position);
+    unhide(position);
 }
 
 function clickedEcon() {
-    let page = document.getElementById("economicslink");
     let position = 1;
 
-    unhide(page, position);
+    unhide(position);
 }
 
 function clickedClim() {
-    let page = document.getElementById("climatelink");
     let position = 2;
 
-    unhide(page, position);
-}
-
-
-function showModal() {
-    let page = document.getElementById("slivModal");
-
-    page.classList.remove("hidden")
+    unhide(position);
 }

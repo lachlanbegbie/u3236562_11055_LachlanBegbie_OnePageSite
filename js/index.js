@@ -1,11 +1,11 @@
 // Remove 'hidden' class from the clicked article, hide all others
 
-function unhideArticle(current, position) {
-    let articles = document.getElementsByClassName("paragraph");
+function unhideArticle(position) {
+    let articles = document.getElementsByClassName("paragraph"); // arrary of values for every article
 
-    for (i=0; i<articles.length; i++) {
+    for (i=0; i<articles.length; i++) { // checks every paragraph, including ones on different/hidden pages
 
-        if (i != position) {
+        if (i != position) { // means only the clicked one does not get hidden
             articles[i].classList.add("hidden");
         } else {
             articles[i].classList.remove("hidden");
@@ -17,84 +17,73 @@ function unhideArticle(current, position) {
 // Population Page
 
 function oneArticle() {
-    let article = document.getElementById("one");
-    let position = 0;
+    let position = 0; //declares the value tested against ^ to determine if clicked
 
-    unhideArticle(article, position);
+    unhideArticle(position); // runs ^ with correct position value
 }
 
 function twoArticle() {
-    let article = document.getElementById("two");
     let position = 1;
 
-    unhideArticle(article, position);
+    unhideArticle(position);
 }
 
 function threeArticle() {
-    let article = document.getElementById("three");
     let position = 2;
 
-    unhideArticle(article, position);
+    unhideArticle(position);
 }
 
 
 // Economics Page
 
 function fiveArticle() {
-    let article = document.getElementById("five");
     let position = 3;
 
-    unhideArticle(article, position);
+    unhideArticle(position);
 }
 
 function sixArticle() {
-    let article = document.getElementById("six");
     let position = 4;
 
-    unhideArticle(article, position);
+    unhideArticle(position);
 }
 
 function sevenArticle() {
-    let article = document.getElementById("seven");
     let position = 5;
 
-    unhideArticle(article, position);
+    unhideArticle(position);
 }
 
 function eightArticle() {
-    let article = document.getElementById("eight");
     let position = 6;
 
-    unhideArticle(article, position);
+    unhideArticle(position);
 }
 
 
 // Climate Change Page
 
 function nineArticle() {
-    let article = document.getElementById("nine");
     let position = 7;
 
-    unhideArticle(article, position);
+    unhideArticle(position);
 }
 
 function tenArticle() {
-    let article = document.getElementById("ten");
     let position = 8;
 
-    unhideArticle(article, position);
+    unhideArticle(position);
 }
 
 function elevenArticle() {
-    let article = document.getElementById("eleven");
     let position = 9;
 
-    unhideArticle(article, position);
+    unhideArticle(position);
 }
 
 function twelveArticle() {
-    let article = document.getElementById("twelve");
     let position = 10;
 
-    unhideArticle(article, position);
+    unhideArticle(position);
 }
