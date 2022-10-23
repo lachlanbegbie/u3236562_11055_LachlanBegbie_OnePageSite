@@ -48,7 +48,7 @@ Failed Features
 
 Overall Reflection
 
-      Although there is much in the website which I am happy with, there are many elements which my own skillset and insights into 
+   Although there is much in the website which I am happy with, there are many elements which my own skillset and insights into 
    the JavaScript language have prevented me from achieving. Overall, I feel as though the final product was lacking in areas, and 
    that the design turned out to be a little plain and unsatisfying. I am disappointed that I was only able to really include one 
    JavaScript feature, and would, if given the opportunity, seek out more applicable skills which would help me develop a more robust 
