@@ -1,11 +1,43 @@
-// Menu buttons
-// Links in html run functions
+// Remove 'hidden' class from the clicked article, hide all others
 
-let pecon = document.getElementById("section3a");
-let ppop = document.getElementById("section3b");
-let pclim = document.getElementById("section3c");
-let phlth = document.getElementById("section3d");
+function unhide(current, point) {
+    let pages = document.getElementsByClassName("sections");
 
-function myFunction() {
-    pecon.classList.toggle(".hidden");
+    for (i=0; i<pages.length; i++) {
+        if (i != point) {
+            pages[i].classList.add("hidden");
+        } else {
+            pages[i].classList.remove("hidden");
+        }
+    }
+}
+
+
+// On each click of a menu item, the page selected will be revealed, and the other pages will be hidden
+function clickedPop() {
+    let page = document.getElementById("populationlink");
+    let position = 0;
+
+    unhide(page, position);
+}
+
+function clickedEcon() {
+    let page = document.getElementById("economicslink");
+    let position = 1;
+
+    unhide(page, position);
+}
+
+function clickedClim() {
+    let page = document.getElementById("climatelink");
+    let position = 2;
+
+    unhide(page, position);
+}
+
+
+function showModal() {
+    let page = document.getElementById("slivModal");
+
+    page.classList.remove("hidden")
 }

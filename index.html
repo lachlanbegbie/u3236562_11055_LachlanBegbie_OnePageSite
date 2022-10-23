@@ -12,32 +12,241 @@
 
         </header> -->
         <main>
-            <div id="section1">
+            <section id="section1">
                 <h1 id="landingTitle">Australia: to 2050</h1>
-            </div>
+                <h2 id="landingSub">from the <a href="https://treasury.gov.au/sites/default/files/2019-03/IGR_2010_Overview.pdf" style="text-decoration:underline;">2010 Intergenerational Report</a></h1>
+            </section>
 
-            <div id="section2">
-                <h1 id="economics"><a href="#" id="economicslink" onclick="myFunction()">economics</a></h1>
-                <h1 id="population"><a href="#" id="populationlink">population</a></h1>
-                <h1 id="climatechange"><a href="#" id="climatelink">climate change</a></h1>
-                <h1 id="healthwellbeing"><a href="#" id="healthlink">health and wellbeing</a></h1>
-            </div>
+            <section id="section2">
+                <div id="menus">
+                    <h1 id="population"><span id="populationlink" onclick="clickedPop()">population</span></h1>
+                    <h1 id="economics"><span id="economicslink" onclick="clickedEcon()">economics</span></h1>
+                    <h1 id="climatechange"><span id="climatelink" onclick="clickedClim()">climate change</span></h1>
+                </div>
+            </section>
 
-            <div id="section3a" class="hidden">
-                <h1>economics</h1>
-            </div>
-
-            <div id="section3b" class="hidden">
+            <section id="section3a" class="sections hidden">
                 <h1>population</h1>
-            </div>
 
-            <div id="section3c" class="hidden">
+                <div class="buttons">
+                    <div class="apop" onclick="oneArticle()">
+                        <h2>An Ageing Population</h1>
+                    </div>
+    
+                    <div class="acare" onclick="twoArticle()">
+                        <h2>Supporting the Ageing Population</h1>
+                    </div>
+
+                    <div class="gpop" onclick="threeArticle()">
+                        <h2>A Growing Population</h1>
+                    </div>
+                </div>
+                
+                <div class="articles">
+                    <div class="paragraph one hidden" id="one">
+                        <h2>An Ageing Population</h2>
+                    
+                        <p>
+                            As life expectancy increases, the number of people exceeding working age will increase,
+                            meaning proportionally less workers - both in aiding the development of the economy and
+                            the caring for these retirees. This will place increasing pressure on economic growth and
+                            consequently the rising standards of living. The ageing population will also result in 
+                            fiscal pressures because of the demand for government services.
+                        </p>
+                    
+                        <p>Between 2010 and 2050 in Australia:</p>
+                        <ul>
+                            <li>The number of people aged 65-84 years is expected to more than double.</li>
+                            <li>The number of people aged 85+ years is expected to more than quadruple.</li>
+                        </ul>
+                    
+                        <p>In contrast to this:</p>
+                        <ul>
+                            <li>The number children in only expected to increase by 45%.</li>
+                            <li>The number prime-age working people is only expected to increase by 44%.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="paragraph two hidden" id="two">
+                        <h2>Supporting the Ageing Population</h2>
+                    
+                        <p>
+                            The number of people in the population aged 85 and over is expected to more than quadruple 
+                            over the next 40 years. This group has the greatest need for formal aged care. Australian 
+                            Government spending on aged care is projected to increase as a proportion of GDP from 0.8 per 
+                            cent in 2009-10 to around 1.8 per cent in 2049-50. Over the next four years the Government 
+                            will provide more than $44 billion in direct financial support for aged and community care.
+                        </p>
+                    </div>
+
+                    <div class="paragraph three hidden" id="three">
+                        <h2>A Growing Population</h2>
+                    
+                        <p>
+                            Over time, the population will grow, though at a decreasing pace. Population growth will
+                            help balance the pressures of an ageing population, however it will place added stress on
+                            our infrastructures (e.g. housing), our services (e.g. health) and our environment. Managing
+                            this will require extensive forward-planning and investment into strained areas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section3b" class="sections hidden">
+                <h1>economics</h1>
+
+                <div class="buttons2">
+                    <div class="sliv" onclick="fiveArticle()">
+                        <h2>Standards of Living</h1>
+                    </div>
+    
+                    <div class="prod" onclick="sixArticle()">
+                        <h2>Productivity</h1>
+                    </div>
+    
+                    <div class="budg" onclick="sevenArticle()">
+                        <h2>Budget Pressures</h1>
+                    </div>
+    
+                    <div class="sust" onclick="eightArticle()">
+                        <h2>Sustainable Economic Growth</h1>
+                    </div>
+                </div>
+                
+                <div class="articles">
+                    <div class="paragraph one hidden" id="five">
+                        <h2>Standards of Living</h2>
+                    
+                        <p>
+                            Ageing populations mean the GDP per capita will grow at a lesser rate. It is projected that
+                            GDP per capita will grow at a rate of 1.5% per annum over the next 40 years, compared to the
+                            growth rate of 1.9% per annum from the last 40 years. Economic growth rate is also expected 
+                            to decrease from the 3.3% over the last 40 years to 2.7% in the next 40.
+                        </p>
+
+                        <img src="img/gdp.png" id="gdp">
+                    </div>
+                    
+                    <div class="paragraph two hidden" id="six">
+                        <h2>Productivity</h2>
+                    
+                        <p>
+                            The "labour force participation rate", which is the percentage of the population of employable 
+                            age, is expected to fall from today's 65%, to 61% by 2050. As a result of this, an increase in 
+                            productivity will need to be a driving force behing the future economic growth. Australia's 
+                            productivity is currently growing at the 30-year average rate of 1.6% per year, however this 
+                            rate will have to increase to ease the economic stresses which can be caused by an ageing 
+                            population.
+                        </p>
+                    </div>
+                    
+                    <div class="paragraph three hidden" id="seven">
+                        <h2>Budget Pressures</h2>
+                    
+                        <p>
+                            There is a projected rise in spending on areas like health, pensions and aged care, all due to 
+                            the nature of an ageing population. Most of these increased costs will be a result of new 
+                            technologies like medicines, and a continuing demand for better provisions in health services. 
+                            These demands will add pressure on the government's budget. Meanwhile, the slower economic growth 
+                            will mean Australia will struggle to meet these new spending costs. Many other factors are 
+                            contributing to the projected spendings increases, however health costs are estimated to contribute 
+                            to around two thirds of this. By 2050, spending is expected to exceed revenue by approximately 2.5% 
+                            of the GDP (Gross Domestic Product).
+                        </p>
+                    </div>
+                    
+                    <div class="paragraph four hidden" id="eight">
+                        <h2>Sustainable Economic Growth</h2>
+                    
+                        <p>
+                            We have seen the beginning of the steps taken by the Australian Government in ensuring sustainable 
+                            economic growth in the future.
+                        </p>
+
+                        <p>
+                            Whenever the economy shows signs of strong growth, the government aims to limit the spending growth 
+                            to allow the budget grow to an excess. This strategy will over time lead to the country's spending 
+                            dropping by percentages of the GDP, placing it significantly on the road to reducing the long-term 
+                            pressures on spending.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section3c" class="sections hidden">
                 <h1>climate change</h1>
-            </div>
 
-            <div id="section3d" class="hidden">
-                <h1>health and wellbeing</h1>
-            </div>
+                <div class="buttons3">
+                    <div class="thrt" onclick="nineArticle()">
+                        <h2>The Threat of Climate Change</h1>
+                    </div>
+    
+                    <div class="poll" onclick="tenArticle()">
+                        <h2>Low Pollution Economy</h1>
+                    </div>
+    
+                    <div class="renw" onclick="elevenArticle()">
+                        <h2>Supporting Renewable Technologies</h1>
+                    </div>
+                </div>
+                
+                <div class="articles">
+                    <div class="paragraph one hidden" id="nine">
+                        <h2>The Threat of Climate Change</h2>
+                    
+                        <p>
+                            Climate change is the defining intergenerational issue of our time. As Australia is so hot and 
+                            dry, it will likely be one of the countries hit hardest by the effects of climate change, and 
+                            these effects have a detrimental impact on our environment and economy.
+                        </p>
+
+                        <p>Without working to reduce the effects of climate change:</p>
+
+                        <ul>
+                            <li>Lives, health and infrastructure would be affected by increasingly extreme weather events</li>
+                            <li>Agriculture and other systems would be at risk due to dwindling water supplies</li>
+                            <li>Many natural locations (e.g. Kakadu NP, Great Barrier Reef) could be threatened</li>
+                        </ul>
+
+                        <img src="img/temp.png" id="temp">
+                    </div>
+                    
+                    <div class="paragraph two hidden" id="ten">
+                        <h2>Low Pollution Economy</h2>
+                    
+                        <p>
+                            Early moves towards a low pollution economy will avoid a more abrupt and expensive change further 
+                            down the line. The long-term transformation costs are estimated around 15% lower under early action. 
+
+                        </p>
+
+                        <p>
+                            The Carbon Pollution Reduction Scheme (CPRS) is the tool used to reduce Australia's emissions, and
+                            is supported by many government policies such as the Renewable Energy Target and the Clean Energy 
+                            Initiative (worth $4.5 billion). The benefit of the CPRS is it will allow businesses and communities, 
+                            rather than the governing bodies, to determine how and where the required emissions reductions will occur.
+                        </p>
+                    </div>
+                    
+                    <div class="paragraph three hidden" id="eleven">
+                        <h2>Supporting Renewable Technologies</h2>
+                    
+                        <p>
+                            The Australian Government has made significant moves towards policies which will encourage people to 
+                            engage with the research and development, as well as the use of renewable technologies. The government's 
+                            renewable energy target is one where 20% of electricity supply in Australia comes from renewable sources.
+                        </p>
+
+                        <p>
+                            The government is investing billions of dollars into ensuring low emissions and renewable energy is 
+                            incorporated in many areas of life, such as the $4.5 billion Clean Energy Initiative, focused on low 
+                            emissions technologies, and the $3 billion Energy Efficient Homes Package, which provides Australian 
+                            homes money to incorporate efficient insulation, and offers incentives to installing solar systems. This
+                            over time will reduce energy usage and save Australians money on energy bills.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </main>
         <!-- <footer>
             

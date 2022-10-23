@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+/*  */
 /* Section 1 */
+/*  */
+
+main {
+    height: 100vh;
+    
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
 
 a {
     color: inherit;
@@ -32,15 +40,25 @@ a:visited {
     font-size: 70px;
     font-weight: 600;
 
-    text-align: center;
+    padding-top: 38%;
+    padding-bottom: 1%;
+    padding-left: 48%;
+}
 
-    position: absolute;
-    top: 70%;
-    left: 45%;
+#landingSub {
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+
+    padding-bottom: 1%;
+    padding-left: 48%;
 }
 
 
+
+/*  */
 /* Section 2 */
+/* Menu Items */
 
 #section2 {
     background-color: rgb(190, 84, 84);
@@ -52,6 +70,17 @@ a:visited {
     position: sticky;
     top: 0%;
     z-index: 20;
+
+    scroll-snap-align: start;
+}
+
+#menus {
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 #economics {
@@ -61,7 +90,9 @@ a:visited {
 
     text-align: center;
 
-    padding: 20px 10px 20px 10px;
+    padding: 40px 10px;
+
+    cursor: pointer;
 }
 
 #population {
@@ -71,7 +102,9 @@ a:visited {
 
     text-align: center;
 
-    padding: 20px 10px 20px 10px;
+    padding: 40px 10px;
+
+    cursor: pointer;
 }
 
 #climatechange {
@@ -81,70 +114,446 @@ a:visited {
 
     text-align: center;
 
-    padding: 20px 10px 20px 10px;
+    padding: 40px 10px;
+
+    cursor: pointer;
 }
 
-#healthwellbeing {
+#questionsanswer {
     font-family: 'Lexend', sans-serif;
     font-size: 70px;
     font-weight: 600;
 
     text-align: center;
 
-    padding: 20px 10px 20px 10px;
+    padding: 40px 10px;
+    margin-top: 100px;
+
+    cursor: pointer;
 }
 
 
+
+/*  */
 /* Section 3 */
+/* Information pages (Population, Economy, ClimateChange) */
 
 .hidden {
     display: none;
+}
+
+.buttons {
+    display: grid;
+    float: left;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+    width: 25%;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+}
+
+.buttons h2 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+.apop {
+    grid-area: a;
+    
+    padding: 5%;
+    margin-bottom: 2%;
+
+    background-color: rgb(190, 84, 84);
+    color: rgb(255, 241, 224);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.gpop {
+    grid-area: b;
+
+    padding: 5%;
+    margin-bottom: 2%;
+
+    background-color: rgb(190, 84, 84);
+    color: rgb(255, 241, 224);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.acare {
+    grid-area: c;
+    
+    padding: 5%;
+
+    background-color: rgb(190, 84, 84);
+    color: rgb(255, 241, 224);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.buttons2 {
+    display: grid;
+    float: left;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+    width: 25%;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas:
+      "d"
+      "e"
+      "f"
+      "g"
+}
+
+.buttons2 h2 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+.sliv {
+    grid-area: d;
+    
+    padding: 5%;
+    margin-bottom: 2%;
+
+    background-color: rgb(190, 84, 84);
+    color: rgb(255, 241, 224);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+#gdp {
+    display: block;
+    
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 70%;
+
+    text-align: center;
+}
+
+.prod {
+    grid-area: e;
+    
+    padding: 5%;
+    margin-bottom: 2%;
+
+    background-color: rgb(190, 84, 84);
+    color: rgb(255, 241, 224);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.budg {
+    grid-area: f;
+    
+    padding: 5%;
+    margin-bottom: 2%;
+
+    background-color: rgb(190, 84, 84);
+    color: rgb(255, 241, 224);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.sust {
+    grid-area: g;
+    
+    padding: 5%;
+    margin-bottom: 2%;
+
+    background-color: rgb(190, 84, 84);
+    color: rgb(255, 241, 224);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.buttons3 {
+    display: grid;
+    float: left;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+    width: 25%;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas:
+      "h"
+      "i"
+      "j"
+}
+
+.buttons3 h2 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+.thrt {
+    grid-area: h;
+    
+    padding: 5%;
+    margin-bottom: 2%;
+
+    background-color: rgb(190, 84, 84);
+    color: rgb(255, 241, 224);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.poll {
+    grid-area: i;
+    
+    padding: 5%;
+    margin-bottom: 2%;
+
+    background-color: rgb(190, 84, 84);
+    color: rgb(255, 241, 224);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.renw {
+    grid-area: j;
+    
+    padding: 5%;
+    margin-bottom: 2%;
+
+    background-color: rgb(190, 84, 84);
+    color: rgb(255, 241, 224);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.articles {
+    display: grid;
+    float: left;
+    margin-left: 2%;
+    margin-right: 5%;
+    width: 60%;
+
+    /* background-color: rgb(204, 219, 224); */
+    border-radius: 10px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas:
+      "aa"
+      "ab"
+      "ac"
+      "ad"
+}
+
+.one {
+    grid-area: aa;
+
+    overflow: hidden;
+    /* height: 0px; */
+}
+
+.two {
+    grid-area: ab;
+
+    overflow: hidden;
+    /* height: 0px; */
+}
+
+.three {
+    grid-area: ac;
+
+    overflow: hidden;
+    /* height: 0px; */
+}
+
+.four {
+    grid-area: ad;
+
+    overflow: hidden;
+    /* height: 0px; */
+}
+
+.paragraph {
+    padding: 5%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.paragraph h2 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+
+    padding-bottom: 10px;
+}
+
+.paragraph p {
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+
+    line-height: 2em;
+
+    padding-left: 3%;
+    padding-bottom: 3%;
 }
 
 #section3a {
     background-color: rgb(255, 241, 224);
     color: rgb(190, 84, 84);
 
-    height: 300vh;
+    height: 100vh;
     width: 100vw;
 
     position: sticky;
     top: 0%;
     z-index: 30;
+
+    scroll-snap-align: start;
+}
+
+#section3a h1 {
+    background-color: rgb(255, 241, 224);
+    
+    font-family: 'Lexend', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+
+    padding: 3%;
+    padding-bottom: 3.5%;
+
+    position: sticky;
+    top: 0%;
+}
+
+#section3a ul {
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+
+    line-height: 1.5;
+
+    padding-left: 7%;
+    padding-bottom: 3%;
+
+    list-style-type: disc;
 }
 
 #section3b {
     background-color: rgb(255, 241, 224);
     color: rgb(190, 84, 84);
 
-    height: 300vh;
+    height: 100vh;
     width: 100vw;
 
     position: sticky;
     top: 0%;
     z-index: 30;
+
+    scroll-snap-align: start;
+}
+
+#section3b h1 {
+    background-color: rgb(255, 241, 224);
+    
+    font-family: 'Lexend', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+
+    padding: 3%;
+
+    position: sticky;
+    top: 0%;
+}
+
+#section3b ul {
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+
+    line-height: 1.5;
+
+    padding-left: 7%;
+    padding-bottom: 3%;
+
+    list-style-type: disc;
 }
 
 #section3c {
     background-color: rgb(255, 241, 224);
     color: rgb(190, 84, 84);
 
-    height: 300vh;
+    height: 100vh;
     width: 100vw;
 
     position: sticky;
     top: 0%;
     z-index: 30;
+
+    scroll-snap-align: start;
 }
 
-#section3d {
+#section3c h1 {
     background-color: rgb(255, 241, 224);
-    color: rgb(190, 84, 84);
+    
+    font-family: 'Lexend', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
 
-    height: 300vh;
-    width: 100vw;
+    padding: 3%;
 
     position: sticky;
     top: 0%;
-    z-index: 30;
+}
+
+#section3c ul {
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+
+    line-height: 2;
+
+    padding-left: 7%;
+    padding-bottom: 3%;
+
+    list-style-type: disc;
+}
+
+#temp {
+    display: block;
+    
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 50%;
+
+    text-align: center;
 }
